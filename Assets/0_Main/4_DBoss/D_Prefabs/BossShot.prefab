@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3343692715912829469}
   - component: {fileID: 600890883654457991}
   - component: {fileID: -515265655459983792}
+  - component: {fileID: -2570356740664047269}
   m_Layer: 0
   m_Name: BossShot
   m_TagString: Enemy
@@ -82,6 +83,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-2570356740664047269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595551310247498842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af979c309e91404e97d8431120f8f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  deleteTime: 5
 --- !u!1 &2556034138948068993
 GameObject:
   m_ObjectHideFlags: 0

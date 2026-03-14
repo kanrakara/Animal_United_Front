@@ -68,9 +68,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   bossHp: 10
-  targetHeight: 0
-  bossMoveSpeed: 3
-  bossDamper: 0.5
+  targetHeight: 10
+  bossMoveSpeed: 10
+  bossDamper: 0.9
   bossShotPrefab: {fileID: 1595551310247498842, guid: 1eddc5f20ccbfe34283382bbab032c35, type: 3}
   bossShotSpeed: 5
   spreadAngle: 15
