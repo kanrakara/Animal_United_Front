@@ -270,7 +270,7 @@ public class BossController : MonoBehaviour
         //}
 
         // ボスの見た目を消す
-        if (bossVisual != null) bossVisual.SetActive(false);
+        if (bossVisual != null) { bossVisual.SetActive(false); }
 
         // 少し待ち時間を入れてから、オブジェクトを完全に削除
         yield return new WaitForSeconds(1.0f);
