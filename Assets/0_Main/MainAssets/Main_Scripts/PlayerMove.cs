@@ -43,6 +43,12 @@ public class PlayerMove : MonoBehaviour
         get { return lastInputDirection; }
     }
 
+    //追加
+    public void SetMoveDirectionY(float yValue)
+    {
+        moveDirection.y = yValue;
+    }
+
     //移動ボタンのアクション
     void OnMove(InputValue value)
     {
