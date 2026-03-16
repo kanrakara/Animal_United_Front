@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 388643428777725931}
   - component: {fileID: 1130299943057589278}
   - component: {fileID: 2673672083048489570}
-  m_Layer: 0
+  - component: {fileID: 7012301216102539082}
+  m_Layer: 7
   m_Name: Enemy4
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -72,9 +73,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   shieldPre: {fileID: 2429707371381502013, guid: c3550d044bd09e74d81251b515544601, type: 3}
   shotPre: {fileID: 5633338145120647573, guid: 17829fb0f0082e745abbc329c299c6e5, type: 3}
-  shotSpeed: 2
+  shotSpeed: 4
   shotInterval: 2
   waitTime: 3
+  life: 3
+  attackPower: 1
+--- !u!54 &7012301216102539082
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681700388781682804}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4774044240157392932
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,7 +114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3974862234174980177}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gate
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -117,7 +147,7 @@ GameObject:
   - component: {fileID: 980766426897101575}
   - component: {fileID: 4935897104129633507}
   - component: {fileID: 3277133836447737343}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TestBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}

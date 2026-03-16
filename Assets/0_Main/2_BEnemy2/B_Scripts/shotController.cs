@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class shotController : MonoBehaviour
 {
-    public float deleteTime = 5.0f;　//削除時間
+    public float deleteTime = 10.0f;　//削除時間
 
 
     void Start()

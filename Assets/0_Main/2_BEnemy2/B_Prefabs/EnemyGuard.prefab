@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6490442604472782649}
   - component: {fileID: 9051508336236544320}
   - component: {fileID: 4141432957985424324}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 6980593778837354503}
   - component: {fileID: 9066003017447270506}
   - component: {fileID: -6366510325734068133}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EnemyGuard
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

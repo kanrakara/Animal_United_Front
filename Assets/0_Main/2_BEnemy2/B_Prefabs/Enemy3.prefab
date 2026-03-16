@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 256549130367715007}
   - component: {fileID: 2814692542577388043}
   - component: {fileID: 3009990508908053614}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -74,6 +74,8 @@ MonoBehaviour:
   seachlength: 8
   attackSpeed: 0.2
   toDestroyTime: 10
+  life: 10
+  attackPower: 1
 --- !u!54 &3009990508908053614
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -112,7 +114,7 @@ GameObject:
   - component: {fileID: 3234178938980143745}
   - component: {fileID: 4499330961465512795}
   - component: {fileID: 8731197205688620583}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TestBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
