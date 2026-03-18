@@ -217,7 +217,7 @@ MonoBehaviour:
   speed: 1
   stunTime: 0.2
   damageSpeed: 0.5
-  enemyBody: {fileID: 850494822334759449}
+  enemyBody: {fileID: 4053049927703486836}
 --- !u!1 &4546708232037855446
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,5 +331,10 @@ PrefabInstance:
 --- !u!4 &4050968580003636272 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4047972025199878, guid: 928a1377c1cd4515b208fef3a396b8ea, type: 3}
+  m_PrefabInstance: {fileID: 4051427592329087286}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4053049927703486836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1931298151966786, guid: 928a1377c1cd4515b208fef3a396b8ea, type: 3}
   m_PrefabInstance: {fileID: 4051427592329087286}
   m_PrefabAsset: {fileID: 0}

@@ -163,7 +163,7 @@ MonoBehaviour:
   range: 5
   stunTime: 0.2
   damageSpeed: 0.5
-  enemyBody: {fileID: 6225387129994618132}
+  enemyBody: {fileID: 5239600125235970173}
 --- !u!1 &6225387129994618132
 GameObject:
   m_ObjectHideFlags: 0
