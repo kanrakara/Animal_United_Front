@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 public class PlayerShoot : MonoBehaviour
 {
     PlayerMove playerMove;
+    AudioSource audio;
 
     [Header("生成プレハブ・位置")]
     public GameObject shotPrefabs;
@@ -15,6 +16,9 @@ public class PlayerShoot : MonoBehaviour
 
     [Header("スピード")]
     public float shotSpeed = 4.0f;
+
+    [Header("SE")]
+    public AudioClip shotClip;
 
     Coroutine shootCoroutine;
 
@@ -29,19 +33,21 @@ public class PlayerShoot : MonoBehaviour
 
     void Shoot()
     {
-        if (shootCoroutine == null)
-            shootCoroutine = StartCoroutine(ShootCol());
+        if(shootCoroutine == null)
+        shootCoroutine = StartCoroutine(ShootCol());
     }
 
     IEnumerator ShootCol()
     {
+        audio.PlayOneShot(shotClip);
+
         GameObject obj = Instantiate(
             shotPrefabs,
             gate.transform.position,
             Quaternion.identity
         );
 
-        obj.GetComponent<Rigidbody>().AddForce(new Vector3(playerMove.LastInputDirection, 0, 0) * shotSpeed, ForceMode.Impulse);
+        obj.GetComponent<Rigidbody>().AddForce(new Vector3(playerMove.LastInputDirection, 0,0) * shotSpeed, ForceMode.Impulse);
         yield return new WaitForSeconds(interval);
         shootCoroutine = null;
     }
@@ -49,5 +55,6 @@ public class PlayerShoot : MonoBehaviour
     void Start()
     {
         playerMove = GetComponent<PlayerMove>();
+        audio = GetComponent<AudioSource>();
     }
 }

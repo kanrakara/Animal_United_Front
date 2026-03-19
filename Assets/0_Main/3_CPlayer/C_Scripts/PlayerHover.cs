@@ -77,7 +77,7 @@ public class PlayerHover : MonoBehaviour
 
     //ガードメソッド
     public void Gourd(bool btn)
-    {
+    {        
         if (btn && controller.isGrounded)
         {
             playerMove.enabled = false;　//PlayerMove無効

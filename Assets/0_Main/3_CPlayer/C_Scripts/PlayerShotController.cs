@@ -12,6 +12,6 @@ public class PlayerShotController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject, 0.2f);
+        Destroy(gameObject,0.2f);
     }
 }
