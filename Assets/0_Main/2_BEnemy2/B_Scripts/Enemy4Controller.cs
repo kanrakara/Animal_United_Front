@@ -21,12 +21,12 @@ public class Enemy4Controller : MonoBehaviour
 
     [Header("ステータス")]
     public float life = 10.0f; //体力
-    public float attackPower = 1.0f; //攻撃力
+    public float enemy4attackPower = 1.0f; //攻撃力
 
     bool inDamage; //ダメージ管理フラグ
 
     [Header("ダメージ点滅するレンダラー")]
-    public Renderer rend; //子オブジェクトの情報
+    public Renderer[] rend; //子オブジェクトの情報
 
     GameObject player; //プレイヤー情報
 
@@ -39,6 +39,8 @@ public class Enemy4Controller : MonoBehaviour
         StartCoroutine(ModeChange()); //モード切替コルーチンを発動させる
 
         player = GameObject.FindGameObjectWithTag("PlayerFollower");　//プレイヤー情報を取得
+
+        rend = GetComponentsInChildren<Renderer>();
     }
 
     void Update()
@@ -59,13 +61,20 @@ public class Enemy4Controller : MonoBehaviour
             float val = Mathf.Sin(Time.time * 50);
 
             //等間隔で変わっているであろうvalの値をチェックして＋の時間帯は表示、－の時間帯は非表示
-            if (val > 0)
+            //if (val > 0)
+            //{
+            //    rend.enabled = true;
+            //}
+            //else
+            //{
+            //    rend.enabled = false;
+            //}
+
+            bool isVisible = val > 0;
+
+            foreach(Renderer r in rend)
             {
-                rend.enabled = true;
-            }
-            else
-            {
-                rend.enabled = false;
+                r.enabled = isVisible; 
             }
         }
     }
@@ -111,7 +120,7 @@ public class Enemy4Controller : MonoBehaviour
     {
         if (other.gameObject.tag == "PlayerAttack") //ぶつかった相手がPlayerAttackなら
         {
-            if (!shieldMode && player.transform.position.x < transform.position.x)
+            if (!shieldMode || player.transform.position.x > transform.position.x)
             {
 
                 if (life > 0) //まだ体力が残っている場合
@@ -137,7 +146,10 @@ public class Enemy4Controller : MonoBehaviour
     {
         inDamage = false;
         //ダメージ終了と同時に確実に姿を表示させる（点滅終了）
-        rend.enabled = true;
+        foreach(Renderer r in rend)
+        {
+            r.enabled = true;
+        }
     }
 
 }
