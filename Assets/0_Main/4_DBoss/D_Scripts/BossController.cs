@@ -73,29 +73,6 @@ public class BossController : MonoBehaviour
                 // 逃亡コルーチンの開始
                 repositionCol = StartCoroutine(Reposition());
             }
-
-
-            // 移動 （上下移動が不安定なので、UpdateではなくFixedUpdateに変更）
-            //if (moveOn)
-            //{
-            //    // 力として、スピード値を乗算した目標へのベクトルを作成
-            //    Vector3 force = (targetPosition - transform.position) * bossMoveSpeed;
-            //    // 時間を乗算し、速度を出す。慣性のように、前のフレームの速度を引き継ぐ
-            //    velocity += force * Time.deltaTime;
-            //    // 摩擦のように、速度を常に減衰させる
-            //    velocity *= bossDamper;
-
-            //    // 速度に時間を乗算し、このフレームでの移動先を指定
-            //    transform.position += velocity * Time.deltaTime;
-
-            //    // 目標に十分近づいたら近づいたら目標地点で止める、差の絶対値を比較する
-            //    if (Mathf.Abs(transform.position.y - targetPosition.y) < 0.01f)
-            //    {
-            //        transform.position = targetPosition;
-            //        velocity = Vector3.zero;
-            //        moveOn = false; // 到着したら移動フラグをオフにする
-            //    }
-            //}
         }
 
         // ダメージ中であれば点滅
@@ -275,11 +252,6 @@ public class BossController : MonoBehaviour
         // ダメージ中じゃない∧ぶつかった相手がPlayerAttackだったら
         if (!inDamage && other.gameObject.tag == "PlayerAttack")
         {
-            // ぶつかった相手のゲームオブジェクトが持っているスクリプトを取得
-            // ！ダメージ量の記載場所が変更になるかも！
-            //SlashHitbox slashHit = other.gameObject.GetComponent<SlashHitbox>();
-            //bossHp -= slashHit.damage;    // 体力を減少
-
             // ダメージ値は使用せず、1減らす。
             bossHp--;
             inDamage = true;        // ダメージ中ON
