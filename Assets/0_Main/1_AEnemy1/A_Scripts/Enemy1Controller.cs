@@ -59,8 +59,14 @@ public class Enemy1Controller : MonoBehaviour
     void FixedUpdate()
     {
         //ダメージが入っているなら動きが鈍い
-        if(damageTimer > 0) rbody.linearVelocity = new Vector3(direction, 0, 0) * damageSpeed;
-        else rbody.linearVelocity = new Vector3(direction, 0, 0) * speed;
+        if (damageTimer > 0)
+        {
+            rbody.linearVelocity = new Vector3(direction * damageSpeed, rbody.linearVelocity.y, 0);
+        }
+        else
+        {
+            rbody.linearVelocity = new Vector3(direction * speed, rbody.linearVelocity.y, 0);
+        }
     }
 
     void OnTriggerEnter(Collider other)
