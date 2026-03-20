@@ -1,21 +1,90 @@
 fileFormatVersion: 2
 guid: 599b2dc9e6c44a8ebc02ddea1f18d215
 ModelImporter:
-  serializedVersion: 24200
-  internalIDToNameTable: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body
+    100002: BottomCover
+    100004: Eyeball
+    100006: Head
+    100008: HornL01
+    100010: HornL02
+    100012: HornL03
+    100014: HornL04
+    100016: HornLTip01
+    100018: HornLTip02
+    100020: HornLTip03
+    100022: HornLTip04
+    100024: HornMid01
+    100026: HornMid02
+    100028: HornMid03
+    100030: HornMidTip01
+    100032: HornMidTip02
+    100034: HornMidTip03
+    100036: HornR01
+    100038: HornR02
+    100040: HornR03
+    100042: HornR04
+    100044: HornRTip01
+    100046: HornRTip02
+    100048: HornRTip03
+    100050: HornRTip04
+    100052: //RootNode
+    100054: Shell
+    100056: Spine01
+    100058: Spine02
+    100060: TurtleShell
+    100062: UpperCover
+    400000: Body
+    400002: BottomCover
+    400004: Eyeball
+    400006: Head
+    400008: HornL01
+    400010: HornL02
+    400012: HornL03
+    400014: HornL04
+    400016: HornLTip01
+    400018: HornLTip02
+    400020: HornLTip03
+    400022: HornLTip04
+    400024: HornMid01
+    400026: HornMid02
+    400028: HornMid03
+    400030: HornMidTip01
+    400032: HornMidTip02
+    400034: HornMidTip03
+    400036: HornR01
+    400038: HornR02
+    400040: HornR03
+    400042: HornR04
+    400044: HornRTip01
+    400046: HornRTip02
+    400048: HornRTip03
+    400050: HornRTip04
+    400052: //RootNode
+    400054: Shell
+    400056: Spine01
+    400058: Spine02
+    400060: TurtleShell
+    400062: UpperCover
+    4300000: TurtleShell
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: TurtleShell
   externalObjects: {}
   materials:
-    materialImportMode: 2
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    removeConstantScaleCurves: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -30,46 +99,32 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
-    importPhysicalCameras: 1
-    importVisibility: 1
+    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
-    nodeNameCollisionStrategy: 1
-    fileIdsGeneration: 2
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    bakeAxisConversion: 0
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    optimizeBones: 1
-    generateMeshLods: 0
-    meshLodGenerationFlags: 0
-    maximumMeshLod: -1
-    meshOptimizationFlags: -1
-    indexFormat: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 1
-    secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    strictVertexDataChecks: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -78,10 +133,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
-  importAnimation: 1
+  importAnimation: 0
+  copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -91,20 +146,21 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
-  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 1
-  remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157762
+  packageName: RPG Monster Duo PBR Polyart
+  packageVersion: 1.5
+  assetPath: Assets/RPG Monster DUO PBR Polyart/Meshes/TurtleShellMesh.fbx
+  uploadId: 602007

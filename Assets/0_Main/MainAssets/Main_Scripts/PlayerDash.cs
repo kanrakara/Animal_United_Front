@@ -34,13 +34,23 @@ public class PlayerDash : MonoBehaviour
         get { return isDashing; }
     }
 
+    //クールダウンタイマーのプロパティ（読み取り専用）
+    public float CoolDownTimer
+    {
+        get { return cooldownTimer; }
+    }
+
     //ダッシュボタン
     void OnCrouch(InputValue value)
     {
-        //ダッシュフラグがまだ立っておらず、クールダウンも済の場合
-        if (value.isPressed && !isDashing && cooldownTimer <= 0)
+        //空中では発動できない
+        if (controller.isGrounded)
         {
-            currentDashCoroutine = StartCoroutine(StartDash());
+            //ダッシュフラグがまだ立っておらず、クールダウンも済の場合
+            if (value.isPressed && !isDashing && cooldownTimer <= 0)
+            {
+                currentDashCoroutine = StartCoroutine(StartDash());
+            }
         }
     }
 
@@ -81,6 +91,7 @@ public class PlayerDash : MonoBehaviour
     {
         Dash();
         yield return new WaitForSeconds(dashDuration);
+        while (!controller.isGrounded) yield return null;
         EndDash();
     }
 

@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 8765223257102584192}
   - component: {fileID: 7431738346959768983}
   - component: {fileID: 1514511149078817308}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,8 +88,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 0
+  m_Radius: 0.35
+  m_Height: 1.31
   m_Direction: 1
   m_Center: {x: 0, y: -0.5, z: 0}
 --- !u!136 &8765223257102584192
@@ -140,7 +140,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &1514511149078817308
 MonoBehaviour:
@@ -163,7 +163,7 @@ MonoBehaviour:
   range: 5
   stunTime: 0.2
   damageSpeed: 0.5
-  enemyBody: {fileID: 5239600125235970173}
+  enemyBody: {fileID: 6236900206445084251}
 --- !u!1 &6225387129994618132
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,7 +268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6143360441750893814, guid: 52afacfe1f4adb64da56bf2c8f207809, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.14
+      value: -1.07
       objectReference: {fileID: 0}
     - target: {fileID: 6143360441750893814, guid: 52afacfe1f4adb64da56bf2c8f207809, type: 3}
       propertyPath: m_LocalPosition.z
@@ -315,6 +315,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52afacfe1f4adb64da56bf2c8f207809, type: 3}
+--- !u!1 &6236900206445084251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6717186348481896409, guid: 52afacfe1f4adb64da56bf2c8f207809, type: 3}
+  m_PrefabInstance: {fileID: 843816713234801026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6842180671240820084 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6143360441750893814, guid: 52afacfe1f4adb64da56bf2c8f207809, type: 3}

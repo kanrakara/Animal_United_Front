@@ -52,7 +52,6 @@ public class Enemy2Controller : MonoBehaviour
             float val = Mathf.Sin(Time.time * 50);
             if (val > 0) enemyBody.SetActive(true);
             else enemyBody.SetActive(false);
-
         }
         else if (isDamage)
         {

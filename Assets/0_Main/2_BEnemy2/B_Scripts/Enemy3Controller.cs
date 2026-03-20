@@ -137,7 +137,6 @@ public class Enemy3Controller : MonoBehaviour
             }
             else //体力が残っていない場合は消滅
             {
-                GameManager.gameState = GameState.gameclear;
                 Destroy(gameObject, 0.3f);
             }
 

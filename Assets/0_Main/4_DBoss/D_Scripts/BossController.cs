@@ -260,6 +260,7 @@ public class BossController : MonoBehaviour
             // 体力がなくなったら死亡
             if (bossHp <= 0 && !isDead)
             {
+                GameManager.gameState = GameState.gameclear;
                 isDead = true;      // 二度と呼ばれないようにする
 
                 // 個別にコルーチンを止める
