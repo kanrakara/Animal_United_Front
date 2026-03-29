@@ -4,7 +4,7 @@
 ３トリオは大クモを退治することを決意、「やられる前にやる」…弱肉強食の戦いが幕を明けるのでした！  
 <br>
 それぞれの特徴を持った３キャラクターをうまく切り替え、EnemyやBossを退治します<br>
-[サンプルプレイはこちら](https://dynarise2001.xyz/kunren/animal_united_front_green_team/)
+[サンプルプレイはこちら](https://dynarise2001.xyz/kunren/animal_united_front_blue_team/)
 <br><br>
 
 <img src="readme_img/readme1.png" width="72%" alt="トップ画面">
